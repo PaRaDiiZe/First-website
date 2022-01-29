@@ -1,23 +1,45 @@
+{% extends 'base.twig' %}
+{% block css %}
+<link rel="stylesheet" href="css/contact.css">
+{% endblock css %}
 
-            <main>
-                <section>
-                    <h2>Une question ?</h2>
-                    <article>
-                            <form method="post" action="http://localhost/reception.php">
-                                <label for="pseudo">Entrez votre pseudo : </label>
-                                <input type="text" name="pseudo" id="pseudo"><br><br>
-
-                                <label for="mail">Entrez votre adresse mail :</label>
-                                <input type="text" name="mail" id="mail"><br><br>
-                                    
-                                <label for="question">Votre question : </label>
-                                <textarea name="question" id="question"></textarea><br><br>
-                                    
-                                <input type="submit" value="Envoyer">
-                            </form>
-                        <h2>Merci !</h2>
-                        <p>Nous prenons sérieusement toutes questions ou critiques envers notre site internet donc n'hésitez pas !</p>
-                        <p>Nous vous répondrons aussi rapidement que possible</p>
-                    </article>
-                </section>
-            </main>
+{% block main %}
+<main>
+    <section>
+        <h2>{{form.gros_text1}}</h2>
+        <article>
+            <div class="form">
+                <form method="post" action="./reception.php" role="formulaire">
+                    <filedset>
+                        <p>
+                            <label for="pseudo">{{form.pseudo}}</label>
+                            <input type="text" name="pseudo" id="pseudo" autocomplete="given-name"
+                                placeholder="username">
+                        </p>
+                    </filedset>
+                    <fieldset>
+                        <p>
+                            <label for="mail">{{form.mail}}</label>
+                            <input type="text" name="mail" id="mail" autocomplete="email" placeholder="email@email.com"
+                                required>
+                        </p>
+                        </filedset>
+                        <fieldset>
+                            <p>
+                                <label for="question">{{form.question}}</label>
+                                <textarea name="question" id="question" placeholder="Question ? / вопрос ?"></textarea>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <input type="submit" value="Envoyer">
+                        </fieldset>
+                </form>
+            </div>
+            <h2>{{form.gros_text2}}</h2>
+            <p>{{form.text_form1}}
+            </p>
+            <p>{{form.text_form2}}</p>
+        </article>
+    </section>
+</main>
+{% endblock main %}

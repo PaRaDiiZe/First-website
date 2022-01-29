@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Blacklisted';
+    src: url('Blacklisted.eot');
+    src: url('Blacklisted.eot?#iefix') format('embedded-opentype'),
+        url('Blacklisted.woff2') format('woff2'),
+        url('Blacklisted.woff') format('woff'),
+        url('Blacklisted.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

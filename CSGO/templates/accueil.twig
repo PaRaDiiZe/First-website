@@ -1,52 +1,41 @@
-    <main>
+{% extends 'base.twig' %}
+{% block css %}
+<link rel="stylesheet" href="./css/accueil.css">
+{% endblock css %}
+
+{% block main %}
+
+
+
+<main>
     <section>
-        <h2>-&nbsp;Actualite&nbsp;-</h2>
+        <h2>-&nbsp;{{ac.actu}}&nbsp;-</h2>
         <article>
             <div class="style">
                 <img src="image/ct.jpg" alt="counter">
                 <div class="actu_place">
 
-                     <p>
-                        La structure norvégienne a dévoilé au fil des jours l'intégralité des joueurs qui
-                        porteront ses couleurs cette année. Un recrutement ambitieux réalisé en partie grâce à
-                        la dernière levée de fonds obtenue par le club fin 2021 et qui permettra à deux anciens
-                        d'EXTREMUM et FunPlus Phoenix de se relancer.</p>
+                    <p>
+                        {{ac.texte_1}}</p>
 
 
-                    <p> Depuis qu'ils ont changé de nom pour devenir Apeks en janvier 2019, les anciens Kingpins
-                        Esports se sont montrés comme des acteurs stables du top 50 international sans pour
-                        autant parvenir à franchir les derniers paliers. Toutefois cette fois en 2022 ils
-                        souhaitent briser ce plafond de verre pour avancer un peu plus dans la hiérarchie
-                        internationale.</p>
+                    <p> {{ac.texte_2}}</p>
 
-                    <p>L'année dernière donc, avec un groupe composé de joueurs norvégiens et
-                        suédois le club avait pu compter sur le charisme de l'ancien Fnatic et Ninjas in Pyjamas
-                        Dennis "dennis" Edman. </p>
+                    <p>{{ac.texte_3}}</p>
 
-                     <p>Avec lui à leurs côtés ils seront parvenus au mieux à atteindre
-                        la 39ème place mondiale selon HLTV.org à la fin de l'hiver, et ensuite ils retomberont
-                        dans leurs travers pour stagner à nouveau aux alentours du top 50 comme leurs
-                        prédécesseurs. De cet effectif il ne reste presque plus rien aujourd'hui si ce n'est
-                        l'entraîneur Pål "Polly" Kammen et le capitaine depuis juin 2021 Asger "AcilioN" Larsen.
+                    <p>{{ac.texte_4}}
                     </p>
 
-                    <p>Même l'adjoint de Polly, Daniel "djL" Narancic, a été confirmé sur le départ et devrait
-                         rejoindre dans les prochains jours l'encadrement des Ninjas in Pyjamas.</p>
+                    <p>{{ac.texte_5}}</p>
                 </div>
             </div>
-            <h2>-&nbsp;Qu'est-&nbsp;ce que Counter Strike ? &nbsp;-</h2>
-            <p>Counter-Strike (CS) est une série de jeux vidéo de tir à la première personne dans lesquels deux
-                équipes s'affrontent pour perpétrer ou empêcher un acte terroriste (attentat à la bombe, prise
-                d'otage, etc.).</p>
+            <h2>-{{ac.prez}}-</h2>
+            <p>{{ac.prez_texte1}}</p>
 
-            <p>La série est nommée d'après le premier jeu de la série, Counter-Strike (2000), qui est
-                initialement publié comme mod pour le jeu vidéo Half-Life (1998) et conçu par Minh Le et Jess
-                 Cliffe avant que les droits du jeu ne soient acquis par Valve, développeur de Half-Life.</p>
+            <p>{{ac.prez_texte2}}</p>
 
-            <p>Ce premier opus est suivi par plusieurs autres jeux : Counter-Strike Neo (2003), Counter-Strike:
-                Condition Zero (2004), Counter-Strike: Source (2004), Counter-Strike Online (2008) et
-                Counter-Strike: Global Offensive (2012). </p>
+            <p>{{ac.prez_texte3}}</p>
         </article>
     </section>
 </main>
-       
+{% endblock main %}

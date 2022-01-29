@@ -14,3 +14,4 @@ function init_twig()
     // Renvoie le moteur
     return $twig;
 }
+?>

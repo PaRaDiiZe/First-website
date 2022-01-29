@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Sheeping Dogs';
+    src: url('Sheeping-Dogs.eot');
+    src: url('Sheeping-Dogs.eot?#iefix') format('embedded-opentype'),
+        url('Sheeping-Dogs.woff2') format('woff2'),
+        url('Sheeping-Dogs.woff') format('woff'),
+        url('Sheeping-Dogs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,65 @@
+{% extends 'base.twig' %}
+{% block css %}
+<link rel="stylesheet" href="./css/categorie2.css">
+{% endblock css %}
+
+{% block main %}
+<main>
+    <section>
+        <h2>-{{armes.nom}}-</h2>
+        <article>
+            <div class="tableau">
+                <table class="tableau_2" role="statistique arme">
+                    <thead>
+                        <tr>
+                            <td class="titre2" colspan="3">
+                                {{armes.titre}}
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="7">
+                                <img src="{{armes.img_arme}}" alt="m4">
+                            </td>
+                            <td></td>
+                            <td> {{armes.spray}}</td>
+                        </tr>
+                        <tr>
+                            <td> {{armes.degat}} </td>
+                            <td rowspan="6">
+                                <img src="{{armes.img_spray}}" alt="spray">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> {{armes.cadence}}</td>
+                        </tr>
+
+                        <tr>
+                            <td> {{armes.reload}} </td>
+                        </tr>
+
+                        <tr>
+                            <td> {{armes.armure}} </td>
+                        </tr>
+
+                        <tr>
+                            <td> {{armes.mun}} </td>
+                        </tr>
+
+                        <tr>
+                            <td> {{armes.cout}} </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="ok">
+                <h2>-&nbsp;{{Historique}}&nbsp;-</h2>
+            </div>
+            <p>{{armes.text}}</p>
+            <p>{{armes.text2}} </p>
+        </article>
+    </section>
+</main>
+{% endblock %}
